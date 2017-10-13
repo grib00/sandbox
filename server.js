@@ -12,7 +12,7 @@ for(var c in catalog.categories) if (c.length === 2) {
 	catalog.categories[c].items.forEach(function (it) { catalog.categories.allItems[it.r] = it; });
 }
 
-var host = process.env.IP || process.env.OPENSHIFT_NODEJS_IP ||"127.0.0.1";
+var host = process.env.IP || process.env.OPENSHIFT_NODEJS_IP ||"0.0.0.0";
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var appPath = "/555";
 var secret = "6789974";
